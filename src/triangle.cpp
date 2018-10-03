@@ -1,27 +1,19 @@
 #include <iostream>
 #include "triangle.h"
 
-void triangle::setCote1(float n_cote1){
-	triangle.cote1=n_cote1;
-};
+float triangle::surface(float Base, float Hauteur)
+{
+	float res;
+	res = float (Base * Hauteur) / 2;
+	std::cout << "La surface est de " << res << std::endl;
+	return (res);
+}
 
-void triangle::setCote2(float n_cote2){
-	triangle.cote2=n_cote2;
-};
-
-void triangle::setBase(float n_base){
-	triangle.base=n_base;
-};
-
-void triangle::setHauteur(float n_hauteur){
-	triangle.hauteur=n_hauteur;
-};
-
-int triangle::surface(float base, float hauteur){
-	return (base * hauteur / 2);
-};
-
-int triangle::perimetre(float cote1, float cote2, float base)
-	return (cote1 + cote2 + base);
-};
+float triangle::perimetre(float Cote1, float Cote2, float Base)
+{
+	float res;
+	res = Cote1 + Cote2 + Base;
+	std::cout << "Le perimetre est de " << res << std::endl;
+	return (res);
+}
 
