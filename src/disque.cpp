@@ -1,17 +1,19 @@
 #include <iostream>
+#include <math.h>
 #include "disque.h"
 
-void disque::setRayon(float n_rayon)
+float disque::surface(float Rayon)
 {
-	disque.rayon=n_rayon;
-};
+	float res;
+	res = Rayon * M_PI;
+	std::cout << "La surface est de " << res << std::endl;
+	return (res);
+}
 
-int disque::surface(float rayon)
+float disque::perimetre(float Rayon)
 {
-	return (3.14 * (rayon * rayon));
-};
-
-int disque::perimetre(float rayon)
-{
-	return (2 * 3.14 * rayon);
-};
+	float res;
+	res = 2 * M_PI * Rayon;
+	std::cout << "Le perimetre est de " << res << std::endl;
+	return (res);
+}

@@ -1,10 +1,8 @@
 #pragma once
+#include <iostream>
 
-class figure::figure{
+class figure{
 	public:
-		figure();
-		~figure();
-	private:
-		surface();
-		perimetre();
+		virtual float surface();
+		virtual float perimetre();
 };

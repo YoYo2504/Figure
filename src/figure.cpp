@@ -1,8 +1,8 @@
 #include <iostream>
 #include "figure.h"
 
-int figure::surface(){
+float figure::surface(){
 };
 
-int figure::perimetre(){
+float figure::perimetre(){
 };

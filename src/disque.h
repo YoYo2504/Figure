@@ -1,18 +1,13 @@
 #pragma once
+#include <iostream>
+#include "figure.h"
 
-
-class disque::figure{
+class disque::public figure{
 	public:
-
-		disque::figure();
-		~disque();
-	private:
 		float rayon;
 
-	protected:
-		setRayon(float n_rayon);
-		perimetre(float n_rayon);
-		suraface(float n_rayon);
+		perimetre(float Rayon);
+		surface(float Rayon);
 };
 
 
