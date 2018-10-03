@@ -2,12 +2,12 @@
 #include <iostream>
 #include "figure.h"
 
-class disque::public figure{
+class disque: public figure{
 	public:
 		float rayon;
 
-		perimetre(float Rayon);
-		surface(float Rayon);
+		float perimetre(float Rayon);
+		float surface(float Rayon);
 };
 
 

@@ -1,18 +1,16 @@
 #include <iostream>
 #include "rectangle.h"
 
-void rectangle::setCote1(float n_cote1){
-	rectangle.cote1=n_cote1;
-};
+float rectangle::surface(float Longueur, float Largeur){
+	float res;
+	res = Longueur * Largeur;
+	std::cout << "La surface est de " << res << std::endl;
+	return (res);
+}
 
-void rectangle::setCote2(float n_cote2){
-	rectangle.cote2=n_cote2;
-};
-
-int rectangle::surface(float cote1, float cote2){
-	return (cote1 * cote2);
-};
-
-int rectangle::perimetre(float cote1, float cote2){
-	return (2 * cote1 + 2 * cote2);
-};
+float rectangle::perimetre(float Longueur, float Largeur){
+	float res;
+	res = 2 * float(Longueur + Largeur);
+	std::cout << "Le perimetre est de " << res << std::endl;
+	return (res);
+}

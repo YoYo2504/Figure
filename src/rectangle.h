@@ -1,17 +1,14 @@
 #pragma once
+#include <iostream>
+#include "figure.h"
 
-class rectangle : figure{
+class rectangle: public figure{
 	public:
-		rectangle : figure();
-		~rectangle();
-	private:
-		float cote1;
-		float cote2;
-	protected:
-		setCote1(float n_cote1);
-		setCote2(float n_cote2);
-		surface(float n_cote1, float n_cote2);
-		perimetre(float n_cote1, float n_cote2);
+		float longueur;
+		float largeur;
+
+		float surface(float Longueur, float Largeur);
+		float perimetre(float Longueur, float Largeur);
 };
 
 
