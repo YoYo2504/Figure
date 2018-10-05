@@ -3,6 +3,6 @@
 
 class figure{
 	public:
-		virtual float surface();
-		virtual float perimetre();
+		float surface();
+		float perimetre();
 };

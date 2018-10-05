@@ -14,11 +14,9 @@
 
 class disque: public figure{
 	public:
-
 /*!\objet --> rayon
 * \type float
 */
-
 		float rayon;
 
 /*!\Methode --> perimetre
@@ -26,7 +24,6 @@ class disque: public figure{
 * \param Rayon --> correspond au rayon du disque que l'utilisateur renseigne
 * \return --> le permimetre du disque
 */
-
 		float perimetre(float Rayon);
 
 /*!\Methode --> surface

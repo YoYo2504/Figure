@@ -8,7 +8,7 @@ using namespace std;
 
 int main(){
 	int choose1, choose2;
-	int a, b, c;
+	float a, b, c;
 
 	welcome:
 
